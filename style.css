@@ -20,6 +20,7 @@ All custom properties start here
     --color-grey: #47535dbf;
     --color-white: #fff;
     --color-white2: rgba(255,255,255, .2);
+    --color-black: rgba(0,0,0, .2);
 
     /* Font family variables*/
     --font-familyHead: poppins, sans-serif;
@@ -31,6 +32,7 @@ All custom properties start here
 /*************************
  Basic Reset Starts 
 **************************/
+
 * {
     margin: 0;
     padding: 0;
@@ -59,32 +61,33 @@ body {
    background-color: var(--bg-color-deepOrange);
 }
 
-.navigation {
-    height: 9rem;
+ .navigation {
+    height: 8.5rem;
     background-image: linear-gradient(to right, var(--bg-color-deepOrange), var(--bg-color-lighterOrange), var(--bg-color-lightOrange));
     border-bottom: 1px solid var(--color-white2);
-}
+} 
 
-.nav-block {
+
+ .nav-block {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     width: 95%;
     height: 100%;
-    /* background-color: blue; */
 }
+
 
 .nav-logo {
     display:flex;
-}
+} 
 
-.nav__logo {
+ .nav__logo {
     margin-right: 1rem;
     display:block;
-}
+} 
 
-.nav__logo-caption{
+ .nav__logo-caption{
     color: var(--color-white);
     align-self: center;
     font-weight: 600;
@@ -92,28 +95,46 @@ body {
 }
 
 .nav-center {
-    background:;
+    flex-shrink: 1;
+} 
+
+.nav-right {
+    flex-shrink: 1;
 }
 
-.nav-links{
+ .nav-links{
     list-style: none;
 }
 
-.list-items{
 
+
+.nav-center .list-items{
+    display: inline-block;
+    padding: .8rem 1.2rem;
+    
 }
 
-.list-items:not(:last-child) {
-    margin-right: 4rem;
+.list-items {
+    border-radius: 10px;
+    transition:background .2s ease-in-out;
 }
+
+.list-items:hover{
+    background: var(--color-black);
+}
+
+.list-items--right {
+    display: block;
+}
+
+
 
 .list-items__link {
     color: white;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 500;
     text-transform: uppercase;
-    display: inline-block;
 }
 /*Body Styles ends */
 
@@ -122,6 +143,23 @@ body {
 Components
 **************************/
 
+/* Button components */
+.btn__primary {
+    padding: 1.1rem 3rem;
+    background-color: #000;
+    border-radius: 10px;
+} 
+
+.btn__secondary {
+    padding: 1rem;
+    border: 1px solid var(--color-white);
+    border-radius: 10px;
+} 
+/* Button components end */
+
+
+/* Components end here */
+
 
 /*************************
 Utility Classes 
@@ -129,8 +167,13 @@ Utility Classes
 
 .flex {
     display: flex;
+} 
+
+.doublemag {
+    margin-right: 1rem !important;
+    padding: 0 !important;
 }
 
 /* Utility Classes Ends */
 
-
+ 
