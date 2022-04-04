@@ -1,0 +1,38 @@
+/* TABLE OF CONTENT 
+
+=> Custom Variables
+=> Basic Reset
+=> Utility Classes
+
+*/
+
+/*************************
+All custom properties start here 
+***************************/
+
+:root {
+    
+}
+
+/* Custom properties stop here */
+
+/* Basic Reset Starts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* setting 1rem = 10px */
+html {
+    font-size: 62.5%;  
+}
+
+/* Basic Reset Ends */
+
+/* Utility Classes */
+
+.flex {
+    display: flex;
+}
+
