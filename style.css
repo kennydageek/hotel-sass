@@ -15,6 +15,10 @@ All custom properties start here
     --bg-color-deepOrange: #E79585;
     --bg-color-lighterOrange: #FBB791;
     --bg-color-lightOrange: #F4A58C;
+    --bg-color-brown: #72676B; 
+    --bg-color-brown2: #5F6266;
+    --bg-color-green: #213338;
+    --bg-color-green2: #1D3339;
 
     /* Text color variables */
     --color-grey: #47535dbf;
@@ -58,7 +62,7 @@ body {
 .header {
    width: 100vw;
    height: 100vh;
-   background-color: var(--bg-color-deepOrange);
+   background-image: linear-gradient(to bottom, var(--bg-color-deepOrange), var(--bg-color-lightOrange), var(--bg-color-lighterOrange), var(--bg-color-brown), var(--bg-color-green));
 }
 
  .navigation {
