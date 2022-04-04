@@ -11,12 +11,26 @@ All custom properties start here
 ***************************/
 
 :root {
-    
+    /* Background color variables */
+    --bg-color-deepOrange: #E79585;
+    --bg-color-lighterOrange: #FBB791;
+    --bg-color-lightOrange: #F4A58C;
+
+    /* Text color variables */
+    --color-grey: #47535dbf;
+    --color-white: #fff;
+    --color-white2: rgba(255,255,255, .2);
+
+    /* Font family variables*/
+    --font-familyHead: poppins, sans-serif;
+    --font-familyText: poppins, sans-serif 
 }
 
 /* Custom properties stop here */
 
-/* Basic Reset Starts */
+/*************************
+ Basic Reset Starts 
+**************************/
 * {
     margin: 0;
     padding: 0;
@@ -30,10 +44,93 @@ html {
 
 /* Basic Reset Ends */
 
-/* Utility Classes */
+/*************************
+Body Styles
+**************************/
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--font-familyText);
+}
+
+.header {
+   width: 100vw;
+   height: 100vh;
+   background-color: var(--bg-color-deepOrange);
+}
+
+.navigation {
+    height: 9rem;
+    background-image: linear-gradient(to right, var(--bg-color-deepOrange), var(--bg-color-lighterOrange), var(--bg-color-lightOrange));
+    border-bottom: 1px solid var(--color-white2);
+}
+
+.nav-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 95%;
+    height: 100%;
+    /* background-color: blue; */
+}
+
+.nav-logo {
+    display:flex;
+}
+
+.nav__logo {
+    margin-right: 1rem;
+    display:block;
+}
+
+.nav__logo-caption{
+    color: var(--color-white);
+    align-self: center;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.nav-center {
+    background:;
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.list-items{
+
+}
+
+.list-items:not(:last-child) {
+    margin-right: 4rem;
+}
+
+.list-items__link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-block;
+}
+/*Body Styles ends */
+
+
+/*************************
+Components
+**************************/
+
+
+/*************************
+Utility Classes 
+**************************/
 
 .flex {
     display: flex;
 }
 
 /* Utility Classes Ends */
+
+
