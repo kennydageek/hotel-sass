@@ -12,6 +12,7 @@ All custom properties start here
 
 :root {
     /* Background color variables */
+    --bg-color-deepBlue: #001E33;
     --bg-color-deepOrange: #E79585;
     --bg-color-lighterOrange: #FBB791;
     --bg-color-lightOrange: #F4A58C;
@@ -22,12 +23,14 @@ All custom properties start here
     --bg-gradient:linear-gradient(to bottom, #e79585, #f4a58c, #fbb791, #72676b, #213338);
     --bg-gradient-invert:linear-gradient(to bottom, #213338, #72676b,#fbb791, #f4a58c, #e79585);
     --border-underline: #5D5FEF;
+
     /* Text color variables */
     --color-grey: #47535dbf;
     --color-white: #fff;
     --color-white2: rgba(255,255,255, .2);
     --color-black: rgba(0,0,0, .2);
-    --color-white3: #e4dede;
+    --color-white3: #e4dede; 
+    --color-blue1: #7f8e99;
 
     /* Font family variables*/
     --font-familyHead: poppins, sans-serif;
@@ -50,7 +53,8 @@ All custom properties start here
 
 /* setting 1rem = 10px */
 html {
-    font-size: 62.5%;  
+    font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 /* Basic Reset Ends */
@@ -62,7 +66,6 @@ Body Styles
 body {
     font-size: 1.6rem;
     font-family: var(--font-familyText);
-    /* overflow-x: hidden; */
 }
 
 .header {
@@ -70,7 +73,7 @@ body {
    width: 100vw;
    height: 100vh;
    background-image: var(--bg-gradient);
-   overflow-x: hidden;
+   /* overflow-x: hidden; */
 }
 
  .navigation {
@@ -151,34 +154,29 @@ body {
 }
 
 .header-content {
-   /* background: red; */
-   background-color: var(--color-black);
-   backdrop-filter: blur(10px) saturate(80%);
+   /* background-color: var(--color-black); */
+   /* backdrop-filter: blur(10px) saturate(80%); */
    min-height: 69rem;
-   /* background:blue; */
-   /* opacity: .3; */
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
 
 }
 
 .content-container {
     display: flex;
-    /* flex-wrap: wrap-reverse; */
     justify-content: space-around;
     align-items: center;
-    /* background: pink; */
-    
     height: 68rem;
     width: 85%;
     margin: 0 auto;
     border: none;
-    /* background: blue; */
     padding-top: 2rem;
 }
 
 .content-text {
     flex-basis: 60rem;
     height: 40rem;
-    /* background: green; */
     opacity:1;
     margin: 2rem;
 }
@@ -196,9 +194,10 @@ body {
 
 .content-text__heading--underline {
     display: inline-block;
-    border-bottom: 3px solid var(--border-underline);
+    border-bottom: 4px solid var(--border-underline);
     padding-bottom:.5rem;
     line-height: .7;
+    /* background: red; */
 }
 
 .content-text__paragraph {
@@ -245,6 +244,45 @@ body {
     height: 100%
 }
 
+/* Section processes stars here */
+
+.section-process {
+    background-color: var(--bg-color-deepBlue);
+    padding: 10rem 0;
+}
+
+.section-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.section-items {
+    text-align: center;
+    padding: 2rem;
+    color: var(--color-blue1);
+}
+
+.section-image {
+
+}
+
+.section-image__image {
+
+}
+
+.section__heading{
+    color: var(--color-white);
+    font-weight: 500;
+    margin: 1rem;
+}
+
+.section__paragraph{
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    width: 87%;
+    /* background: red; */
+}
 /*Body Styles ends */
 
 
